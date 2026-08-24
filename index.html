@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arte Mentis — Independent AI Consulting, San Diego</title>
+<meta name="description" content="Independent AI consulting for owner-led businesses. Focused assessments, adoption sprints, and vendor second opinions. Matt Simmons, San Diego.">
+<link rel="canonical" href="https://artementis.com/">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://artementis.com/">
+<meta property="og:site_name" content="Arte Mentis">
+<meta property="og:title" content="Arte Mentis — Independent AI Consulting, San Diego">
+<meta property="og:description" content="Know what AI is actually worth to your business before you spend on it. Focused assessments, adoption sprints, and vendor second opinions for owner-led businesses.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Arte Mentis — Independent AI Consulting, San Diego">
+<meta name="twitter:description" content="Know what AI is actually worth to your business before you spend on it. Focused assessments, adoption sprints, and vendor second opinions for owner-led businesses.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --tile: #B5543B;
+    --tile-deep: #9C4732;
+    --ink: #241D18;
+    --paper: #FBF8F4;
+    --paper-deep: #F4EEE6;
+    --muted: #6E635A;
+    --rule: #E3DACE;
+    --rule-soft: #ECE4D9;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: "EB Garamond", Georgia, "Times New Roman", serif;
+    background: var(--paper);
+    color: var(--ink);
+    font-size: 1.1875rem;
+    line-height: 1.68;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection { background: var(--tile); color: var(--paper); }
+
+  .wrap   { max-width: 46rem;  margin: 0 auto; padding: 0 1.5rem; }
+  .wrap-w { max-width: 60rem;  margin: 0 auto; padding: 0 1.5rem; }
+
+  a { color: var(--tile); }
+  a:focus-visible,
+  .button:focus-visible {
+    outline: 2px solid var(--tile);
+    outline-offset: 3px;
+  }
+
+  /* ---------- header ---------- */
+
+  header.site {
+    padding: 4rem 0 0;
+    text-align: center;
+  }
+  .wordmark {
+    font-weight: 500;
+    font-size: clamp(1.5rem, 4.5vw, 2rem);
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+    color: var(--tile);
+    /* balance the trailing tracking after the final S */
+    padding-left: 0.17em;
+  }
+  .tagline {
+    margin-top: 0.7rem;
+    color: var(--muted);
+    font-size: 1rem;
+    letter-spacing: 0.06em;
+  }
+  header.site::after {
+    content: "";
+    display: block;
+    width: 3.5rem;
+    height: 2px;
+    background: var(--tile);
+    margin: 2.4rem auto 0;
+  }
+
+  /* ---------- hero ---------- */
+
+  .hero {
+    padding: 6rem 0 6.5rem;
+    text-align: center;
+  }
+  .hero h1 {
+    font-weight: 500;
+    font-size: clamp(2.1rem, 6vw, 3.3rem);
+    line-height: 1.18;
+    letter-spacing: -0.005em;
+    max-width: 21em;
+    margin: 0 auto;
+    text-wrap: balance;
+  }
+  .hero .lede {
+    margin: 1.8rem auto 0;
+    max-width: 34em;
+    font-size: 1.28rem;
+    color: var(--muted);
+    text-wrap: pretty;
+  }
+  .hero .cta { margin-top: 2.8rem; }
+
+  a.button {
+    display: inline-block;
+    font-size: 1.02rem;
+    font-weight: 500;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--paper);
+    background: var(--tile);
+    text-decoration: none;
+    padding: 0.9rem 2.2rem;
+    border-radius: 2px;
+    transition: background 140ms ease;
+  }
+  a.button:hover { background: var(--tile-deep); }
+
+  /* ---------- shared section furniture ---------- */
+
+  section { padding: 5.5rem 0; }
+  section.band {
+    background: var(--paper-deep);
+    border-top: 1px solid var(--rule-soft);
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  section.band + section { border-top: 0; }
+
+  h2.kicker {
+    font-size: 0.92rem;
+    font-weight: 600;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--tile);
+    text-align: center;
+    margin-bottom: 3.2rem;
+    padding-left: 0.24em;
+  }
+
+  /* ---------- recent work ---------- */
+
+  .outcomes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+  .outcome { text-align: left; }
+  .outcome .figure {
+    font-size: clamp(2.4rem, 5vw, 3.1rem);
+    font-weight: 500;
+    line-height: 1;
+    color: var(--tile);
+    font-variant-numeric: lining-nums;
+  }
+  .outcome .figure small {
+    font-size: 0.42em;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+    margin-left: 0.35em;
+    text-transform: uppercase;
+  }
+  .outcome .rule {
+    width: 2.4rem;
+    height: 2px;
+    background: var(--rule);
+    margin: 1.1rem 0 1.1rem;
+  }
+  .outcome p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--ink);
+  }
+  .outcome .note {
+    display: block;
+    margin-top: 0.6rem;
+    font-style: italic;
+    color: var(--muted);
+    font-size: 0.98rem;
+  }
+
+  /* ---------- services ---------- */
+
+  .services { display: grid; gap: 0; }
+  .service {
+    display: grid;
+    grid-template-columns: 9.5rem 1fr;
+    gap: 2.2rem;
+    padding: 2.4rem 0;
+    border-top: 1px solid var(--rule);
+    align-items: baseline;
+  }
+  .service:last-of-type { border-bottom: 1px solid var(--rule); }
+  .service .index {
+    font-size: 0.92rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .service h3 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.25;
+    margin-bottom: 0.55rem;
+  }
+  .service p { color: var(--ink); font-size: 1.12rem; }
+  .services-coda {
+    margin-top: 2.8rem;
+    color: var(--muted);
+    font-size: 1.05rem;
+    font-style: italic;
+    text-align: center;
+    text-wrap: pretty;
+  }
+
+  /* ---------- about ---------- */
+
+  .about .wrap { max-width: 42rem; }
+  .about p + p { margin-top: 1.35rem; }
+  .about .drop::first-letter {
+    color: var(--tile);
+    font-weight: 500;
+  }
+
+  /* ---------- contact ---------- */
+
+  .contact { text-align: center; padding-bottom: 6.5rem; }
+  .contact .heading {
+    color: var(--ink);
+    font-weight: 500;
+    font-size: clamp(1.7rem, 4.5vw, 2.3rem);
+    line-height: 1.25;
+    max-width: 22em;
+    margin: 0 auto 1.4rem;
+    text-wrap: balance;
+  }
+  .contact p { max-width: 33em; margin: 0 auto; color: var(--muted); }
+  .contact .cta { margin-top: 2.4rem; }
+  .contact .email {
+    display: block;
+    margin-top: 1.4rem;
+    font-size: 1.08rem;
+  }
+  .contact .email a { color: var(--tile); text-decoration: none; }
+  .contact .email a:hover { text-decoration: underline; }
+
+  /* ---------- footer ---------- */
+
+  footer.site {
+    border-top: 1px solid var(--rule);
+    padding: 2.6rem 0 3.4rem;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.98rem;
+  }
+  footer .fm {
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+    color: var(--tile);
+    font-size: 0.9rem;
+    margin-bottom: 0.6rem;
+    padding-left: 0.17em;
+  }
+
+  /* ---------- responsive ---------- */
+
+  @media (max-width: 56rem) {
+    .outcomes { grid-template-columns: 1fr; gap: 2.4rem; max-width: 34rem; margin: 0 auto; }
+  }
+  @media (max-width: 40rem) {
+    body { font-size: 1.12rem; }
+    header.site { padding-top: 3rem; }
+    .hero { padding: 4rem 0 4.5rem; }
+    .hero .lede { font-size: 1.16rem; }
+    section { padding: 4rem 0; }
+    .service { grid-template-columns: 1fr; gap: 0.5rem; }
+    .service .index { font-size: 0.85rem; }
+    .contact { padding-bottom: 4.5rem; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    a.button { transition: none; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <div class="wordmark">Arte Mentis</div>
+    <p class="tagline">Independent AI consulting &middot; San Diego</p>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Know what AI is actually worth to your business before you spend on it.</h1>
+    <p class="lede">I help owner-led businesses find where AI genuinely pays off, get their teams using the tools they already have, and check vendor claims before a contract is signed.</p>
+    <div class="cta"><a class="button" href="mailto:matthew.simmons@artementis.com">Start a conversation</a></div>
+  </div>
+</section>
+
+<section class="band" aria-labelledby="work-kicker">
+  <div class="wrap-w">
+    <h2 class="kicker" id="work-kicker">Recent work</h2>
+    <div class="outcomes">
+      <div class="outcome">
+        <div class="figure">&asymp;45&times; <small>recall</small></div>
+        <div class="rule"></div>
+        <p>Built an address enrichment service for a B2B sales team that raised tenant recall roughly 45 times on the test batch &mdash; from 8 businesses found to about 368. It now runs nightly in production with no manual involvement.</p>
+      </div>
+      <div class="outcome">
+        <div class="figure">7 <small>models tested</small></div>
+        <div class="rule"></div>
+        <p>Benchmarked seven language models against fixed thresholds for data extraction, mathematical reasoning, and executive summarization. One passed.<span class="note">The framework and results were published in Towards&nbsp;AI.</span></p>
+      </div>
+      <div class="outcome">
+        <div class="figure">200+ <small>trained</small></div>
+        <div class="rule"></div>
+        <p>Onboarded and trained 200+ distributed professionals for an AI evaluation firm, cutting performance variance across the group by 40 percent.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="services-kicker">
+  <div class="wrap">
+    <h2 class="kicker" id="services-kicker">Services</h2>
+    <div class="services">
+      <div class="service">
+        <div class="index">Assessment</div>
+        <div>
+          <h3>Focused AI Assessment</h3>
+          <p>A short, structured look at your operations that ranks where AI would actually pay off, what it would cost, and what to skip. You get a written report with numbers you can act on, whether or not I do the work that follows.</p>
+        </div>
+      </div>
+      <div class="service">
+        <div class="index">Adoption</div>
+        <div>
+          <h3>AI Adoption Sprint</h3>
+          <p>Your team already has the tools. This gets them used. Hands-on training built from a decade of teaching people to work with complicated systems, with materials your team keeps and a plan that does not depend on me staying.</p>
+        </div>
+      </div>
+      <div class="service">
+        <div class="index">Diligence</div>
+        <div>
+          <h3>Vendor Second Opinion</h3>
+          <p>Before you sign an AI contract, an independent read on what the product actually does, what the deck is really claiming, and whether the price matches the value. Fixed fee, delivered in writing.</p>
+        </div>
+      </div>
+    </div>
+    <p class="services-coda">Also available for fixed-scope builds and ongoing advisory. Every engagement is scoped in writing before it starts.</p>
+  </div>
+</section>
+
+<section class="band about" aria-labelledby="about-kicker">
+  <div class="wrap">
+    <h2 class="kicker" id="about-kicker">About</h2>
+    <p class="drop">I&rsquo;m Matt Simmons. I test AI claims before believing them. In December 2025 I built a benchmark that put seven language models through JSON extraction, mathematical reasoning, and executive summarization against fixed thresholds. One passed, and Towards AI published the results.</p>
+    <p>Behind that sits a decade of teaching people to use complicated tools. Seven years as a graduate instructor at UC Santa Cruz, twenty-plus courses, more than a thousand students across every level of technical comfort. Earlier, I managed twenty-plus institutional accounts for a B2B education platform, including Harvard and MIT, with a 95 percent renewal rate. I hold a Ph.D. from UC Santa Cruz, which in practice means I read what a vendor is actually selling rather than what the deck appears to say.</p>
+    <p>I&rsquo;m based in San Diego and deliberately work with a small number of clients at a time.</p>
+  </div>
+</section>
+
+<section class="contact" aria-labelledby="contact-kicker">
+  <div class="wrap">
+    <h2 class="kicker" id="contact-kicker">Contact</h2>
+    <p class="heading">The first conversation is a fit call, not a pitch.</p>
+    <p>Tell me what you&rsquo;re trying to figure out, and I&rsquo;ll tell you honestly whether I&rsquo;m the right person for it.</p>
+    <div class="cta"><a class="button" href="mailto:matthew.simmons@artementis.com">Email me</a></div>
+    <span class="email"><a href="mailto:matthew.simmons@artementis.com">matthew.simmons@artementis.com</a></span>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="fm">Arte Mentis</div>
+    <div>Matt Simmons, an individual doing business as Arte&nbsp;Mentis &middot; San&nbsp;Diego, California</div>
+  </div>
+</footer>
+
+</body>
+</html>
