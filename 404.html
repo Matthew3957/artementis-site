@@ -65,6 +65,18 @@
     border-radius: 2px;
   }
   a.button:hover { background: var(--tile-deep); }
+  .links {
+    margin-top: 1.8rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .links a { color: var(--muted); text-decoration: none; }
+  .links a:hover { color: var(--tile); }
   a:focus-visible { outline: 2px solid var(--tile); outline-offset: 3px; }
 </style>
 </head>
@@ -73,8 +85,14 @@
     <div class="wordmark">Arte Mentis</div>
     <div class="rule"></div>
     <h1>This page doesn&rsquo;t exist.</h1>
-    <p>The address may have been mistyped, or the page has moved. Everything lives on one page anyway.</p>
+    <p>The address may have been mistyped, or the page has moved. Everything worth finding is a link away.</p>
     <a class="button" href="/">Back to the site</a>
+    <nav class="links" aria-label="Site pages">
+      <a href="/services.html">Services</a>
+      <a href="/work.html">Work</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
   </main>
 </body>
 </html>

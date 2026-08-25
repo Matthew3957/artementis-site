@@ -1,10 +1,13 @@
 # artementis.com
 
-Public deploy repo for the Arte Mentis one-page site, served by GitHub Pages
+Public deploy repo for the Arte Mentis site, served by GitHub Pages
 (deploy from branch: `main`, `/ (root)`) at https://artementis.com.
 
-- `index.html` — the entire site: one page, no build step, no frameworks, no scripts.
-- `404.html` — not-found page in the same style.
+- `index.html`, `services.html`, `work.html`, `about.html`, `contact.html`,
+  `privacy.html`, `terms.html` — the site. No build step, no frameworks, no scripts.
+- `styles.css` — shared styles; each page adds a small page-specific `<style>` block.
+- `404.html` — standalone not-found page in the same style.
+- `sitemap.xml`, `robots.txt` — indexing.
 - `favicon.svg` — mark in the brand accent (#B5543B).
 - `CNAME` — custom domain for GitHub Pages.
 
