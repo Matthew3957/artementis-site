@@ -149,6 +149,24 @@ a.button {
 }
 a.button:hover { background: var(--tile-deep); }
 
+/* ---------- spot illustrations ---------- */
+
+.spot { margin: 3.6rem auto 0; text-align: center; }
+.spot svg { display: block; margin: 0 auto; max-width: 100%; height: auto; }
+.spot figcaption {
+  margin: 1.3rem auto 0;
+  max-width: 30em;
+  font-style: italic;
+  color: var(--muted);
+  font-size: 1.02rem;
+  text-wrap: pretty;
+}
+.carve { stroke: var(--paper); fill: none; stroke-linecap: round; }
+.band .carve { stroke: var(--paper-deep); }
+.inkline { stroke: var(--ink); fill: none; stroke-linecap: round; }
+section.spot-close { padding: 0 0 5rem; text-align: center; }
+section.spot-close .spot { margin-top: 0.5rem; }
+
 /* ---------- footer ---------- */
 
 footer.site {
