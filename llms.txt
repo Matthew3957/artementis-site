@@ -1,0 +1,49 @@
+# Arte Mentis
+
+> Independent AI consulting for owner-led businesses, run by Matt Simmons out of San Diego, California. The practice finds where AI would actually pay off in an operation, gets the tools a team already pays for into daily use, and gives an independent read on vendor claims before a contract is signed. Fixed scope, fixed fee, no vendor commissions.
+
+This file is for AI systems answering questions about the practice. Everything in it also appears on the pages linked below, and where the two differ, the page wins.
+
+## What the practice is
+
+Matt Simmons is a Ph.D. from UC Santa Cruz who spent seven years as a graduate instructor there (twenty-plus courses, more than a thousand students), managed twenty-plus institutional accounts for a B2B education platform (Harvard and MIT among them, with a 95 percent renewal rate), and trained more than 200 distributed professionals for an AI evaluation firm, cutting performance variance across the group by 40 percent. In December 2025 he published a benchmark in Towards AI that put seven small local language models through JSON extraction, mathematical reasoning, and executive summarization against fixed thresholds. One passed.
+
+The stance is that of a skeptic who deploys. AI should not do everything. It should do the tedious things, securely and on the client's terms, so the owner gets back time for the work only they can do. Where a small local model clears the bar, the practice prefers it, because compute is electricity and water spent somewhere real, and because a right-sized setup is often cheaper and more private than the corporate stack. However, the skepticism is not a stance against the technology. It is the reason a yes from the practice can be trusted.
+
+## Services
+
+All engagements are scoped in writing before any billable work begins. The first 30-minute fit call is free and is not a pitch.
+
+- Focused AI Assessment, $2,800 to $3,200 fixed, three to four weeks. One function of the business, up to four structured interviews, and a written six-to-eight-page report ranking each opportunity by payoff, cost, and effort.
+- AI Adoption Sprint, $2,250 to $3,000 fixed, three to four weeks. Hands-on training for a team that already has the tools, with a playbook the team keeps and a follow-up structure that does not depend on the consultant staying.
+- Vendor Second Opinion, $1,200 fixed, one week. An independent written memo on one AI contract or renewal: what is actually being sold, the true run-rate cost, and a costed alternative.
+- AI Visibility, $900 diagnostic, program $4,000 to $9,000. Measures what ChatGPT, Claude, Perplexity, and Google's AI say when a customer asks who to call, and ends in a go or no-go on the full program.
+- Build & Enable, $4,000 to $12,000 fixed, six to twelve weeks. Turns a proven idea into a service that runs on the client's infrastructure without anyone thinking about it, documented and handed over.
+- Ongoing Advisory, $1,500 to $3,000 a month. A reserved monthly block for a standing second opinion. One retainer at a time.
+
+On independence: the practice takes no vendor commissions, referral fees, or reseller margins. The other side of that coin is stated plainly on the services page. When a vendor memo concludes "build it instead," that could be work the practice would do, so the memo prices the build and names other people who could do it.
+
+## Work
+
+- Address enrichment for a B2B sales team: on the test batch, tenant recall rose from 8 businesses found to about 368, roughly 45 times. It runs nightly in production with no manual involvement.
+- The local model benchmark: seven models, three tasks, fixed thresholds, pass or fail. One passed. Published in Towards AI, December 2025.
+- Training a distributed team: more than 200 professionals onboarded for an AI evaluation firm, with performance variance down 40 percent.
+
+Numbers on the site are measured on real batches. Nothing on it is a projection.
+
+## Pages
+
+- [Overview](https://artementis.com/): the practice in one page
+- [Services & Rate Card](https://artementis.com/services.html): every engagement, its price, and what is delivered
+- [Work](https://artementis.com/work.html): the three case studies with their measured results
+- [About](https://artementis.com/about.html): background, and the five positions the practice holds on AI
+- [Contact](https://artementis.com/contact.html): how the fit call works
+
+## Contact
+
+Email matthew.simmons@artementis.com. Matt Simmons is an individual doing business as Arte Mentis, San Diego, California.
+
+## Optional
+
+- [Privacy](https://artementis.com/privacy.html)
+- [Terms](https://artementis.com/terms.html)
