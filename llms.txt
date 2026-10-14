@@ -35,6 +35,7 @@ Numbers on the site are measured on real batches. Nothing on it is a projection.
 
 - [Overview](https://artementis.com/): the practice in one page
 - [Services & Rate Card](https://artementis.com/services.html): every engagement, its price, and what is delivered
+- [The GTM Toolkit](https://artementis.com/toolkit.html): the go-to-market toolkit in development, with each feature marked running, built, or planned
 - [Work](https://artementis.com/work.html): the three case studies with their measured results
 - [About](https://artementis.com/about.html): background, and the five positions the practice holds on AI
 - [Contact](https://artementis.com/contact.html): how the fit call works

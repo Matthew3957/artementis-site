@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The GTM Toolkit &middot; Arte Mentis</title>
+<meta name="description" content="The Arte Mentis GTM Toolkit, in development: one shared AI brain for small sales and marketing teams. Lead enrichment, post-call follow-up from transcripts, call prep, and AI search visibility, with every feature marked running, built, or planned.">
+<link rel="canonical" href="https://artementis.com/toolkit.html">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://artementis.com/toolkit.html">
+<meta property="og:site_name" content="Arte Mentis">
+<meta property="og:title" content="The GTM Toolkit &middot; Arte Mentis">
+<meta property="og:description" content="One shared AI brain for small sales and marketing teams. In development, and running for one sales team today.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Arte Mentis GTM Toolkit",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "description": "An AI go-to-market toolkit for small sales and marketing teams: lead enrichment, post-call follow-up from transcripts, call prep, and AI search visibility measurement, built on one shared context.",
+  "url": "https://artementis.com/toolkit.html",
+  "creativeWorkStatus": "In development",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Arte Mentis",
+    "url": "https://artementis.com"
+  }
+}
+</script>
+<style>
+  /* toolkit only */
+
+  .status-note {
+    margin-top: 2rem;
+    padding: 1.4rem 1.6rem;
+    border-left: 2px solid var(--tile);
+    background: var(--paper-deep);
+    color: var(--muted);
+    font-size: 1.05rem;
+  }
+  .status-note strong { color: var(--ink); font-weight: 600; }
+
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.4rem;
+    margin: 1.2rem 0 0;
+    font-size: 0.95rem;
+    color: var(--muted);
+  }
+
+  .tag {
+    display: inline-block;
+    font-size: 0.74rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    padding: 0.18rem 0.55rem;
+    border-radius: 2px;
+    border: 1px solid currentColor;
+    vertical-align: 0.2em;
+    white-space: nowrap;
+  }
+  .tag.running { color: var(--paper); background: var(--tile); border-color: var(--tile); }
+  .tag.built { color: var(--ink); }
+  .tag.planned { color: var(--muted); border-style: dashed; }
+
+  .prose p { margin-bottom: 1.2rem; }
+
+  .feature-group { margin-top: 2.6rem; }
+  .feature-group h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+  }
+  .feature {
+    padding: 1.2rem 0 1.3rem;
+    border-top: 1px solid var(--rule);
+  }
+  .feature:last-child { border-bottom: 1px solid var(--rule); }
+  .feature-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.6rem 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.45rem;
+  }
+  .feature h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  .feature p {
+    color: var(--muted);
+    font-size: 1.06rem;
+    margin: 0;
+  }
+
+  .brain-list, .refuse-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 1.2rem 0 0;
+  }
+  .brain-list li, .refuse-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.7rem;
+    color: var(--muted);
+    font-size: 1.06rem;
+  }
+  .brain-list li::before, .refuse-list li::before {
+    content: "\2014";
+    position: absolute;
+    left: 0;
+    color: var(--tile);
+  }
+  .brain-list strong, .refuse-list strong { color: var(--ink); font-weight: 600; }
+
+  .phases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: 1.2rem;
+    margin-top: 1.4rem;
+  }
+  .phase {
+    border: 1px solid var(--rule);
+    background: var(--paper);
+    padding: 1.3rem 1.3rem 1.1rem;
+    border-radius: 2px;
+  }
+  .phase .when {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--tile);
+    margin-bottom: 0.5rem;
+  }
+  .phase p { color: var(--muted); font-size: 1.02rem; margin: 0; }
+
+  .people {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 1.8rem;
+    margin-top: 1.4rem;
+  }
+  .person h4 { font-size: 1.25rem; font-weight: 600; margin-bottom: 0.2rem; }
+  .person .role {
+    font-size: 0.85rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--tile);
+    margin-bottom: 0.7rem;
+  }
+  .person p { color: var(--muted); font-size: 1.05rem; margin: 0; }
+
+  .coda-box {
+    margin-top: 3.5rem;
+    padding: 2.4rem 2.2rem;
+    background: var(--paper-deep);
+    border: 1px solid var(--rule);
+    text-align: center;
+    border-radius: 2px;
+  }
+  .coda-box h4 { font-size: 1.35rem; font-weight: 500; margin-bottom: 0.6rem; }
+  .coda-box p { color: var(--muted); font-size: 1.08rem; max-width: 32em; margin: 0 auto 1.5rem; }
+
+  @media (max-width: 560px) {
+    .coda-box { padding: 1.8rem 1.2rem; }
+    .status-note { padding: 1.1rem 1.1rem; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a href="/" class="wordmark-link"><div class="wordmark">Arte Mentis</div></a>
+    <p class="tagline">Independent AI consulting &middot; San Diego</p>
+    <nav class="site-nav" aria-label="Main Navigation">
+      <a href="/">Overview</a>
+      <a href="/services.html">Services</a>
+      <a href="/toolkit.html" class="active">Toolkit</a>
+      <a href="/work.html">Work</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="intro">
+  <div class="wrap">
+    <h1>The GTM Toolkit</h1>
+    <p class="lede">A go-to-market system for small sales and marketing teams. One shared brain does the work that surrounds a sale (finding the lead, preparing the call, following up, being found when a buyer asks an AI) so the people can spend their hours on the conversation itself.</p>
+    <div class="status-note">
+      <p><strong>In development, October 2026.</strong> Parts of it run every night for one sales team today. The rest is either built and in testing, or planned and written down. Every feature below carries one of three marks, because a product page that does not say which is which is asking you to take it on faith.</p>
+      <div class="legend" aria-label="Status key">
+        <span><span class="tag running">Running</span> in use with a customer</span>
+        <span><span class="tag built">Built</span> working, in testing</span>
+        <span><span class="tag planned">Planned</span> specified, not yet built</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" aria-labelledby="why-kicker">
+  <div class="wrap prose">
+    <h2 class="kicker" id="why-kicker">Why it exists</h2>
+    <p>Think about the hour after a good sales call. The rep has a transcript nobody will reread, a CRM record that needs updating, a follow-up email that ought to sound like the company rather than a template, and three more calls on the calendar. Very little of that hour is selling. It is the clerical work around selling, and it is exactly the kind of work AI does well, provided somebody builds it carefully and decides where it should stop.</p>
+    <p>The toolkit began as that build for one telecom sales dealer, first for the founder and then for the reps he hires. It is becoming a product because the next team needs the same thing, and building it twice by hand would be the expensive way to learn that.</p>
+  </div>
+</section>
+
+<section aria-labelledby="brain-kicker">
+  <div class="wrap prose">
+    <h2 class="kicker" id="brain-kicker">One brain, many hands</h2>
+    <p>Every agent in the toolkit reads from the same place: who the company is, whom it sells to, what it sounds like, and what it can and cannot promise. That context is written once, when a team comes on board, and each feature plugs into it instead of carrying its own copy. When the founder changes the pitch, every draft changes with it.</p>
+    <p>The model layer runs on Claude. Each function is exposed over MCP, so a rep can call it from inside Claude in the middle of a working day, and the same functions run on a schedule overnight without anyone asking.</p>
+    <ul class="brain-list">
+      <li><strong>Company context and ideal customer profiles</strong>, the facts every agent starts from.</li>
+      <li><strong>Voice profiles</strong> distilled from the founder&rsquo;s own sent email, in English and Spanish, so drafts sound like the business.</li>
+      <li><strong>Brand rules</strong> for anything visual, from decks to ads.</li>
+      <li><strong>Written methods</strong> for qualification and deal review, kept as documents a manager can read and argue with.</li>
+      <li><strong>Per-person identity</strong>, so each rep acts as themselves and one person&rsquo;s access can be revoked without touching anyone else&rsquo;s.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="band" aria-labelledby="features-kicker">
+  <div class="wrap">
+    <h2 class="kicker" id="features-kicker">What it does</h2>
+
+    <div class="feature-group">
+      <h3>For the reps</h3>
+
+      <div class="feature">
+        <div class="feature-head"><h4>Post-call follow-up from the transcript</h4><span class="tag built">Built</span></div>
+        <p>The call transcript goes in. Structured deal data comes out (next steps, objections, budget, timing, who else is involved), followed by a draft follow-up in the company&rsquo;s voice, in English or Spanish. Some kinds of email are deliberately left to a person, and for those the toolkit drafts guidance rather than the email.</p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-head"><h4>Call prep</h4><span class="tag built">Built</span></div>
+        <p>Before a call, it pulls the deal&rsquo;s history from the CRM and turns it into a short brief: where things stand, what was promised last time, and what to ask.</p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-head"><h4>Cold outreach in the company&rsquo;s voice</h4><span class="tag built">Built</span></div>
+        <p>First-touch drafts built from the same voice profile, so a new rep&rsquo;s first email does not read like a new rep&rsquo;s first email.</p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-head"><h4>Lead prequalification</h4><span class="tag built">Built</span></div>
+        <p>Checks a lead against the customer profile and against where the service is actually available, before anyone spends a call on it. Being connected now to the live availability data.</p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-head"><h4>Deal review</h4><span class="tag planned">Planned</span></div>
+        <p>Scores each open deal against a written rubric and says why, so a pipeline meeting starts from evidence rather than from optimism.</p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-head"><h4>CRM write-back</h4><span class="tag planned">Planned</span></div>
+        <p>What the call surfaced goes back into the CRM on its own, with a person approving each change, so the record is current without anyone typing it in.</p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-head"><h4>Rep onboarding</h4><span class="tag planned">Planned</span></div>
+        <p>A new hire gets the playbook, the voice, and working prompts on day one, and the questions they ask in week one are answered from the company&rsquo;s own material.</p>
+      </div>
+    </div>
+
+    <div class="feature-group">
+      <h3>For the founder and the sales manager</h3>
+
+      <div class="feature">
+        <div class="feature-head"><h4>Nightly lead enrichment</h4><span class="tag running">Running</span></div>
+        <p>Takes a list of commercial addresses and finds which businesses actually operate at each one, including every tenant in a multi-tenant building, then the owner or manager and a way to reach them. It has worked through more than twenty thousand addresses for its first customer. On a 45-address test batch it went from finding 8 businesses to around 368, after we caught a filter that had been quietly discarding 98 percent of the matches. That failure taught us to test every new list against a known answer before trusting it.</p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-head"><h4>Failure alerts</h4><span class="tag running">Running</span></div>
+        <p>Every scheduled job reports in. When one fails, the founder hears about it the same morning, not the following month.</p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-head"><h4>Brand check for decks and documents</h4><span class="tag built">Built</span></div>
+        <p>Reads a deck or a document against the brand rules and flags what drifted before it goes out.</p>
+      </div>
+    </div>
+
+    <div class="feature-group">
+      <h3>For marketing</h3>
+
+      <div class="feature">
+        <div class="feature-head"><h4>AI visibility panel</h4><span class="tag running">Running</span></div>
+        <p>A fixed set of real buyer questions, asked from the team&rsquo;s own markets, across ChatGPT, Claude, Gemini, Perplexity, and Google&rsquo;s AI Overviews. It records whether the company is named, which competitors are named instead, and which sources the engines cite.</p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-head"><h4>Visibility readout</h4><span class="tag planned">Planned</span></div>
+        <p>A monthly report on that panel: share of voice against named competitors, the sites the engines trust, the questions where you are invisible, and what changed since last month. Every rate carries its sample size.</p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-head"><h4>Answer page briefs</h4><span class="tag planned">Planned</span></div>
+        <p>For each question you are missing from, a brief for a page that could answer it. It refuses when there are no real facts behind the page, because a page that could have been written about anyone does not get cited and should not.</p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-head"><h4>Site watch</h4><span class="tag planned">Planned</span></div>
+        <p>Checks that AI crawlers can actually read the website and its structured data, and raises a flag when an engine&rsquo;s answer about the company changes.</p>
+      </div>
+
+      <div class="feature">
+        <div class="feature-head"><h4>Ad and content pipeline</h4><span class="tag planned">Planned</span></div>
+        <p>Image and video ads that keep the same brand from one to the next, in English and Spanish, with a compliance check before anything runs and a ledger of what each ad claimed. Specified in full, and waiting its turn.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="refuse-kicker">
+  <div class="wrap prose">
+    <h2 class="kicker" id="refuse-kicker">What it will not do</h2>
+    <p>Most of the design work in this toolkit went into deciding where it stops. Most of these rules are already enforced in the code, and the rest are conditions on bringing on a second team.</p>
+    <ul class="refuse-list">
+      <li><strong>Nothing reaches a customer without a person approving it.</strong> The toolkit drafts, and a person sends.</li>
+      <li><strong>It will not write a page it has no facts for.</strong> No data, no page.</li>
+      <li><strong>It will not report a number without the sample behind it,</strong> and a measurement that failed is counted as a failure, not as a zero.</li>
+      <li><strong>It uses the smallest model that clears the bar.</strong> A decision a small model can make does not go to a frontier one, which keeps the bill and the energy use honest.</li>
+      <li><strong>Each team&rsquo;s data stays separate,</strong> and a team is told which AI vendors see its questions before its panel runs.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="band" aria-labelledby="road-kicker">
+  <div class="wrap">
+    <h2 class="kicker" id="road-kicker">Where it goes from here</h2>
+    <div class="phases">
+      <div class="phase">
+        <div class="when">Now</div>
+        <p>Running for one sales team. Enrichment and failure alerts run every night, and the visibility panel runs on a fixed schedule. Follow-up, call prep, outreach, and qualification are built and in testing.</p>
+      </div>
+      <div class="phase">
+        <div class="when">Next</div>
+        <p>The visibility readout and deal review. Separating each team&rsquo;s data properly, then bringing on a second team.</p>
+      </div>
+      <div class="phase">
+        <div class="when">After that</div>
+        <p>CRM write-back, rep onboarding, answer page briefs, site watch, and the content pipeline, roughly in that order, and each one only after a team has asked for it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="team-kicker">
+  <div class="wrap">
+    <h2 class="kicker" id="team-kicker">Who is building it</h2>
+    <div class="people">
+      <div class="person">
+        <h4>Matthew Simmons</h4>
+        <div class="role">Founder &middot; builds it</div>
+        <p>Designs and builds the toolkit, and runs the deployments it grew out of. A decade of teaching people to work with complicated systems, and a habit of testing models before trusting them (seven local models benchmarked, one passed).</p>
+      </div>
+      <div class="person">
+        <h4>Kayna Skye</h4>
+        <div class="role">Evaluation &amp; quality</div>
+        <p>Checks what the agents produce before it ships, in English and Spanish. Years of quality assurance on search and ad quality for Google projects, and evaluation of AI output against written rubrics.</p>
+      </div>
+    </div>
+
+    <div class="coda-box">
+      <h4>Early access</h4>
+      <p>We are bringing on a small number of sales teams while the toolkit is in development. If your team sells something and spends too much of its week on the work around selling, write to us.</p>
+      <a class="button" href="mailto:matthew.simmons@artementis.com?subject=GTM%20Toolkit%20early%20access">Ask about early access</a>
+    </div>
+  </div>
+</section>
+
+<section class="spot-close">
+  <div class="wrap">
+    <figure class="spot">
+      <svg viewBox="0 0 400 300" width="260" role="img" aria-label="Block-print illustration of an acorn woodpecker clinging to a granary tree whose trunk is filled with stored acorns">
+        <!-- ground -->
+        <path class="inkline" d="M60 278 q100 -8 280 0" stroke-width="3.5"/>
+        <g class="inkline" stroke-width="2.5">
+          <path d="M92 276 q-3 -11 -8 -15"/>
+          <path d="M104 275 q1 -12 -3 -17"/>
+          <path d="M300 274 q2 -11 7 -15"/>
+        </g>
+
+        <!-- ink plate: trunk, slightly tapered, with a broken top and one stub branch -->
+        <path d="M150 276
+                 C 154 220, 156 150, 160 70
+                 L 168 44 L 178 62 L 190 40 L 200 60 L 212 46
+                 C 216 120, 222 210, 232 276 Z" fill="var(--ink)"/>
+        <path d="M212 112 C 236 100, 258 96, 276 98 L 274 108 C 256 108, 236 114, 214 126 Z" fill="var(--ink)"/>
+
+        <!-- carve: bark lines -->
+        <g class="carve" stroke-width="2">
+          <path d="M166 80 C 164 140, 162 200, 160 268"/>
+          <path d="M206 78 C 210 150, 214 210, 222 268"/>
+        </g>
+
+        <!-- granary: drilled holes (paper) each holding an acorn (tile) -->
+        <g fill="var(--paper)">
+          <circle cx="178" cy="96" r="6.5"/><circle cx="196" cy="104" r="6.5"/>
+          <circle cx="182" cy="124" r="6.5"/><circle cx="200" cy="134" r="6.5"/>
+          <circle cx="176" cy="150" r="6.5"/><circle cx="194" cy="162" r="6.5"/>
+          <circle cx="180" cy="182" r="6.5"/><circle cx="200" cy="192" r="6.5"/>
+          <circle cx="174" cy="212" r="6.5"/><circle cx="192" cy="222" r="6.5"/>
+          <circle cx="182" cy="246" r="6.5"/><circle cx="206" cy="250" r="6.5"/>
+        </g>
+        <g fill="var(--tile)">
+          <circle cx="178" cy="96" r="4"/><circle cx="196" cy="104" r="4"/>
+          <circle cx="182" cy="124" r="4"/><circle cx="200" cy="134" r="4"/>
+          <circle cx="176" cy="150" r="4"/><circle cx="194" cy="162" r="4"/>
+          <circle cx="180" cy="182" r="4"/>
+          <circle cx="174" cy="212" r="4"/><circle cx="192" cy="222" r="4"/>
+          <circle cx="182" cy="246" r="4"/><circle cx="206" cy="250" r="4"/>
+        </g>
+        <!-- one empty hole, still waiting -->
+
+        <!-- ink plate: woodpecker clinging to the trunk's right side, facing left -->
+        <path d="M236 150
+                 C 230 166, 230 188, 238 206
+                 C 244 220, 252 232, 258 250
+                 L 266 248
+                 C 262 230, 266 212, 266 196
+                 C 268 176, 262 158, 250 148 Z" fill="var(--ink)"/>
+        <!-- head -->
+        <path d="M228 150
+                 C 222 136, 230 122, 244 120
+                 C 258 118, 266 130, 262 142
+                 C 258 152, 244 158, 228 150 Z" fill="var(--ink)"/>
+        <!-- bill, pointed at the trunk -->
+        <path d="M228 138 L 212 142 L 229 147 Z" fill="var(--ink)"/>
+        <!-- paper face patch and eye ring -->
+        <path d="M232 140 C 236 134, 246 134, 250 140 C 246 146, 238 147, 232 140 Z" fill="var(--paper)"/>
+        <circle cx="241" cy="140" r="2.6" fill="var(--ink)"/>
+        <!-- tile plate: red cap -->
+        <path d="M238 122 C 246 116, 258 118, 262 128 C 256 126, 246 126, 238 130 Z" fill="var(--tile)"/>
+        <!-- carve: wing edge and the white wing patch -->
+        <path class="carve" d="M248 162 C 258 176, 260 196, 256 214" stroke-width="2.5"/>
+        <path d="M252 196 l 7 -3 l 1 8 l -7 2 Z" fill="var(--paper)"/>
+        <!-- feet gripping bark -->
+        <g class="inkline" stroke-width="3">
+          <path d="M236 200 l -8 2 M234 208 l -8 4"/>
+        </g>
+      </svg>
+      <figcaption><em>Melanerpes formicivorus</em>. The acorn woodpecker lives in family groups that drill one granary tree and fill it together. One hole is always still empty.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="fm">Arte Mentis</div>
+    <div>Matt Simmons, an individual doing business as Arte&nbsp;Mentis &middot; San&nbsp;Diego, California</div>
+    <div class="footer-links">
+      <a href="/services.html">Services</a>
+      <a href="/toolkit.html">Toolkit</a>
+      <a href="/work.html">Work</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy.html">Privacy</a>
+      <a href="/terms.html">Terms</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
