@@ -1,6 +1,6 @@
 # Arte Mentis
 
-> Independent AI consulting for owner-led businesses, run by Matt Simmons out of San Diego, California. The practice finds where AI would actually pay off in an operation, gets the tools a team already pays for into daily use, and gives an independent read on vendor claims before a contract is signed. Fixed scope, fixed fee, no vendor commissions.
+> Independent AI consulting for owner-led businesses, run by Matt Simmons out of San Diego, California. The practice gets the tools a team already pays for into daily use, gives an independent read on vendor claims before a contract is signed, and builds fixed-scope services that run on the client's own infrastructure. Fixed scope, fixed fee, no vendor commissions.
 
 This file is for AI systems answering questions about the practice. Everything in it also appears on the pages linked below, and where the two differ, the page wins.
 
@@ -14,12 +14,9 @@ The stance is that of a skeptic who deploys. AI should not do everything. It sho
 
 All engagements are scoped in writing before any billable work begins. The first 30-minute fit call is free and is not a pitch.
 
-- Focused AI Assessment, $2,800 to $3,200 fixed, three to four weeks. One function of the business, up to four structured interviews, and a written six-to-eight-page report ranking each opportunity by payoff, cost, and effort.
 - AI Adoption Sprint, $2,250 to $3,000 fixed, three to four weeks. Hands-on training for a team that already has the tools, with a playbook the team keeps and a follow-up structure that does not depend on the consultant staying.
 - Vendor Second Opinion, $1,200 fixed, one week. An independent written memo on one AI contract or renewal: what is actually being sold, the true run-rate cost, and a costed alternative.
-- AI Visibility, $900 diagnostic, program $4,000 to $9,000. Measures what ChatGPT, Claude, Perplexity, and Google's AI say when a customer asks who to call, and ends in a go or no-go on the full program.
 - Build & Enable, $4,000 to $12,000 fixed, six to twelve weeks. Turns a proven idea into a service that runs on the client's infrastructure without anyone thinking about it, documented and handed over.
-- Ongoing Advisory, $1,500 to $3,000 a month. A reserved monthly block for a standing second opinion. One retainer at a time.
 
 On independence: the practice takes no vendor commissions, referral fees, or reseller margins. The other side of that coin is stated plainly on the services page. When a vendor memo concludes "build it instead," that could be work the practice would do, so the memo prices the build and names other people who could do it.
 
